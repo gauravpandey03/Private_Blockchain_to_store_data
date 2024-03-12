@@ -1,0 +1,40 @@
+First of all install all dependency of this Project using 
+   npm install.
+Extract Redis from the folder and run redis server for public subscribe model to use .
+
+Open postman and post request with this url
+    http://localhost:3000/api/mine
+    and select data like raw and in JSON fromat..
+
+last you have to run the command 
+    npm run dev to host 
+
+for the peer node you split your terminal and run the following command for peer node 
+
+   npm run dev-peer // exactly like this only on gap between dev and peer
+
+
+Anyone (host or peer ) can mine the data in blockchain.
+ for host use post url   http://localhost:3000/api/mine
+ and provide raw data .
+
+ for peer node to mine  data in   blockchain 
+  you just have to change port address to node from which you want ti mine data on the network ..
+  when you will run your peer node no terminal you will have port address of peer node just put in url and post request
+
+  ex http://localhost:3000/api/mine  // this is host address for minning data you will change the port address example 3289 (port address of peer)
+  http://localhost:3289/api/mine  and mine the data .
+
+
+
+
+
+
+
+
+http://localhost:3000/mine.html       /// for miner 
+http://localhost:3000/            // local host
+
+http://localhost:3000/api/blocks  // views block chain data 
+
+node index.js     // cmd to run on terminal
